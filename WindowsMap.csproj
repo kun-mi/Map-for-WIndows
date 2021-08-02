@@ -36,6 +36,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\..\..\Program Files\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\..\Program Files\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -97,6 +103,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="routeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="routeUC.Designer.cs">
+      <DependentUpon>routeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="searchControl.Designer.cs">
+      <DependentUpon>searchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +128,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="routeUC.resx">
+      <DependentUpon>routeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchControl.resx">
+      <DependentUpon>searchControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
